@@ -20,3 +20,9 @@ class Pokemon(models.Model):
         Dragon = "dragon"
         Normale = "normale"
         Tenebre= "ténébre"
+    nom=models.CharField(max_length=100
+    )
+    type=models.CharField(choices=Type.choices, max_length=10)
+    niveau=models.IntegerField(
+        validators=[MinValueValidator(1), MaxValueValidator(99)]
+    )

@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'exoCreate1.urls'
@@ -78,9 +79,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'test',
-        'HOST': '127.0.01',
+        'HOST': '127.0.0.1',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'root',
         'PORT': '3306',
     }
 }
