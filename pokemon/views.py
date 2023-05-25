@@ -14,4 +14,4 @@ def pokemon_create(request):
             return redirect('home')
         else :
             form=PokemonForm()
-    return render(request,"pokemon/home.html", {"pokemons":Pokemon.objects.all().values()})
+    return render(request,"pokemon/create_pokemon.html", {"form":form})
